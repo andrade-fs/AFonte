@@ -32,7 +32,7 @@ const HeroSection = () => {
                 </div>
                 <div className="flex flex-col items-center justify-end md:order-2 order-1">
                     <Slide direction="right">
-                        <Image image={heroImage} alt="Hero Image" className=" lg:h-[70vh] lg:w-[70vh] md:h-[100%] md:w-full w-[90%] h-[50vh]" />
+                        <Image image={heroImage} alt="Hero Image" className=" lg:h-[70vh] lg:w-[70vh] md:h-[100%] md:w-full w-[90%] h-[40vh]" />
                     </Slide>
 
                 </div>

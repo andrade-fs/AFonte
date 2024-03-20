@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { List } from '../atoms/List'
 import { Text } from '../atoms/Text'
 import { BookingStepsTexts } from '../particles/DataLists'
-import { AirplaneInFlight, AirplaneTilt, Buildings, MapTrifold, Receipt, Wallet } from '@phosphor-icons/react'
+import { Compass, PhoneOutgoing, Coffee } from '@phosphor-icons/react'
 import { Card } from '../molecules/Card'
 import CardImage2 from "../../assets/clock.png"
 import cafeteria from "../../assets/cafeteria.jpg"
@@ -13,11 +13,11 @@ const BookingSteps = () => {
     const renderIcons = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return <MapTrifold size={15} color="currentColor" weight="fill" />;
+                return <Compass size={15} color="currentColor" weight="fill" />;
             case 1:
-                return <Wallet size={15} color="currentColor" weight="fill" />;
+                return <Coffee size={15} color="currentColor" weight="fill" />;
             case 2:
-                return <AirplaneInFlight size={15} color="currentColor" weight="fill" />;
+                return <PhoneOutgoing size={15} color="currentColor" weight="fill" />;
             default:
                 return "";
         }
@@ -51,9 +51,9 @@ const BookingSteps = () => {
                     </ul>
                 </div>
                 {/* Card Container  */}
-                <div className='w-full flex flex-col justify-center lg:items-center items-start relative order-1 md:order-2'>
+                <div className='w-full flex flex-col justify-center lg:items-center items-start relative order-1 md:order-2 mt-24'>
                     {/* First Card  */}
-                    <Image image={cafeteria} alt="Vector" className="absolute bottom-0 right-4 lg:h-80 h-24" />
+                    <Image image={cafeteria} alt="Vector" className="absolute bottom-0 right-4 lg:h-80 h-60" />
 
                     {/* Second Absolute Card  */}
                     <Card cardClass='flex gap-3 justify-start items-start absolute lg:right-0 -right-4 bottom-3 bg-white py-3 px-4 border-2 border-color3/5 shadow-md rounded-xl' imageAlt={BookingStepsTexts.cardTwo.destination} imageSrc={CardImage2} cover='object-cover object-top' imageWrapperClass='h-16 w-16 rounded-full overflow-hidden' textWrapperClass='flex flex-col gap-2'>

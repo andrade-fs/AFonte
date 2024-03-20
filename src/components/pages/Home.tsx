@@ -15,8 +15,6 @@ const Home = () => {
             <TopDestination />
             <BookingSteps />
             <Testimonials />
-            <Partners />
-            <NewsLetter />
         </>
     )
 }

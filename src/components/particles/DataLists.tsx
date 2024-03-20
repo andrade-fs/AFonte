@@ -5,7 +5,7 @@ export const NavLinks = [
     },
     {
         name: "Recomendaciones",
-        url: "/recomendaciones"
+        url: "/#recomendaciones"
     },
     {
         name: "Reseñas",
@@ -25,7 +25,7 @@ export const HeroTexts = {
 
 export const ServiceTexts = {
     firstText: "CATEGORIAS",
-    secondText: "Orecemos nuestros mejores servicios",
+    secondText: "Ofrecemos nuestros mejores servicios",
     cards: [
         {
             firstText: "Desayunos Ligeros",
@@ -106,8 +106,8 @@ export const BookingStepsTexts = {
 }
 
 export const TestimonialTexts = {
-    firstText: "TESTIMONIALS",
-    secondText: "What people say about Us.",
+    firstText: "Testimonios",
+    secondText: "Que opinan nuestros clientes.",
     feedBacks: [
         {
             text: "You did a fabulous job. There were no hitches. Thank you again for all your work planning this trip.",
@@ -139,74 +139,33 @@ export const NewsletterTexts = {
 }
 
 export const FooterTexts = {
-    underLogoText: "Book your trip in minutes, get full control for much longer.",
+    underLogoText: "Cada sorbo cuenta una historia. Vive la tuya con nosotros.",
     quickLinks: {
-        caption: "Quick Links",
+        caption: "Enlaces rápidos",
         links: [
             {
-                name: "Destination",
+                name: "Carta",
                 url: "/"
             },
             {
-                name: "Hotels",
+                name: "Recomendaciones",
                 url: "/"
             },
             {
-                name: "Flights",
+                name: "Reseñas",
                 url: "/"
             },
-            {
-                name: "Bookings",
-                url: "/"
-            },
-            {
-                name: "Login",
-                url: "/"
-            },
-            {
-                name: "Signup",
-                url: "/"
-            }
         ]
     },
     contacts: {
-        caption: "Contacts",
+        caption: "Contacto",
         links: [
             {
-                name: "FAQs",
+                name: "Política de privacidad",
                 url: "/"
             },
             {
-                name: "Help",
-                url: "/"
-            },
-            {
-                name: "Policies",
-                url: "/"
-            },
-            {
-                name: "Terms & Conditions",
-                url: "/"
-            }
-        ]
-    },
-    more: {
-        caption: "More",
-        links: [
-            {
-                name: "Career",
-                url: "/"
-            },
-            {
-                name: "Airlines",
-                url: "/"
-            },
-            {
-                name: "Airline Fees",
-                url: "/"
-            },
-            {
-                name: "Low Fare Tips",
+                name: "Terminos y Condiciones",
                 url: "/"
             }
         ]
