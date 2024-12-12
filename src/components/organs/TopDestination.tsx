@@ -1,7 +1,7 @@
 import { useCallback, useRef } from "react";
 import { Text } from "../atoms/Text"
 import { TopDestinationTexts } from "../particles/DataLists"
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";  // Importing Slider and Settings
 import { Card } from "../molecules/Card";
 import City1 from "../../assets/gallery1.jpeg"
 import City2 from "../../assets/gallery2.jpeg"
@@ -14,61 +14,55 @@ import { ForkKnife, CaretLeft, CaretRight } from "@phosphor-icons/react";
 
 
 const TopDestination = () => {
+    const sliderRef = useRef<Slider | null>(null);
 
-    const sliderRef = useRef<Slider | null>();
-
-    // Function for next button
     const next = () => {
         if (sliderRef.current) {
             sliderRef.current.slickNext();
-
         }
     };
-    // function for previous button
+
     const previous = () => {
         if (sliderRef.current) {
             sliderRef.current.slickPrev();
         }
-
     };
-
-    // Slider settings
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false,
+        const settings: Settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    },
                 },
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    initialSlide: 2,
-                    dots: false,
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        initialSlide: 2,
+                        dots: false,
+                    },
                 },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                    },
                 },
-            },
-        ],
-    };
+            ],
+        };
 
     const renderCities = useCallback((element: number) => {
         switch (element) {
@@ -110,7 +104,7 @@ const TopDestination = () => {
 
             {/* Slides  */}
             <div className="w-full h-auto mt-4">
-                <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+            <Slider ref={sliderRef} {...settings}>
                     {
                         TopDestinationTexts.cards.map((card, index) => (
                             <div key={index} className="md:px-6 px-3">
