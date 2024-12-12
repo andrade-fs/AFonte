@@ -849,12 +849,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-slick@npm:^0.23.10":
-  version: 0.23.10
-  resolution: "@types/react-slick@npm:0.23.10"
+"@types/react-slick@npm:^0.23.13":
+  version: 0.23.13
+  resolution: "@types/react-slick@npm:0.23.13"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10c0/581e89a0ed75eba325366048679251ccbbb065b5dc1228374dfae66a7a6a9ba4a72fd470b1948222a0269805a1ff480bd9942d6a5fa658e382d4d60515a81409
+  checksum: 10c0/35dd72dfbac234b8db019fb8af250ac3891e564d13001642353aa0b7c37f6ed1ff1f5e8fa8b034706993c4d27ac1977c031942636cfd05414ee4667d45c8aea6
   languageName: node
   linkType: hard
 
@@ -2286,7 +2286,7 @@ __metadata:
     "@types/react": "npm:^18.0.37"
     "@types/react-dom": "npm:^18.0.11"
     "@types/react-scroll": "npm:^1.8.7"
-    "@types/react-slick": "npm:^0.23.10"
+    "@types/react-slick": "npm:^0.23.13"
     "@typescript-eslint/eslint-plugin": "npm:^5.59.0"
     "@typescript-eslint/parser": "npm:^5.59.0"
     "@vitejs/plugin-react": "npm:^4.0.0"
@@ -2300,7 +2300,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     react-router-dom: "npm:^6.14.1"
     react-scroll: "npm:^1.8.9"
-    react-slick: "npm:^0.29.0"
+    react-slick: "npm:^0.30.2"
     slick-carousel: "npm:^1.8.1"
     tailwindcss: "npm:^3.3.2"
     typescript: "npm:^5.4.2"
@@ -3112,9 +3112,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-slick@npm:^0.29.0":
-  version: 0.29.0
-  resolution: "react-slick@npm:0.29.0"
+"react-slick@npm:^0.30.2":
+  version: 0.30.2
+  resolution: "react-slick@npm:0.30.2"
   dependencies:
     classnames: "npm:^2.2.5"
     enquire.js: "npm:^2.1.6"
@@ -3124,7 +3124,7 @@ __metadata:
   peerDependencies:
     react: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/965e2957b7d72435397adfa062911e62310e181c14b8667b528f9fe88bda490b86fd94d685c186a4b7704b77e10ef3d6c7be24541652a9787baa80b98000190f
+  checksum: 10c0/8994ae2934aa39e889674124b68669e4e012b2a5286bbbc2a3455c2e11ebd5364ab9c56e1d268f3b7b9fe1fbc3a165b82dd84d6f234f3542385df09998c9fbb5
   languageName: node
   linkType: hard
 
