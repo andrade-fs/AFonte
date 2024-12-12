@@ -1,68 +1,71 @@
 import { useCallback, useRef } from "react";
-import { Text } from "../atoms/Text"
-import { TopDestinationTexts } from "../particles/DataLists"
-import Slider, { Settings } from "react-slick";  // Importing Slider and Settings
+import Slider, { Settings } from "react-slick"; // Import both Slider and Settings types
+import { Text } from "../atoms/Text";
+import { TopDestinationTexts } from "../particles/DataLists";
 import { Card } from "../molecules/Card";
-import City1 from "../../assets/gallery1.jpeg"
-import City2 from "../../assets/gallery2.jpeg"
-import City3 from "../../assets/gallery3.jpeg"
-import City4 from "../../assets/gallery4.jpeg"
-import City5 from "../../assets/gallery5.jpeg"
-import City6 from "../../assets/gallery6.jpeg"
+import City1 from "../../assets/gallery1.jpeg";
+import City2 from "../../assets/gallery2.jpeg";
+import City3 from "../../assets/gallery3.jpeg";
+import City4 from "../../assets/gallery4.jpeg";
+import City5 from "../../assets/gallery5.jpeg";
+import City6 from "../../assets/gallery6.jpeg";
 import { Button } from "../atoms/Button";
 import { ForkKnife, CaretLeft, CaretRight } from "@phosphor-icons/react";
-
 
 const TopDestination = () => {
     const sliderRef = useRef<Slider | null>(null);
 
+    // Function for next button
     const next = () => {
         if (sliderRef.current) {
             sliderRef.current.slickNext();
         }
     };
 
+    // Function for previous button
     const previous = () => {
         if (sliderRef.current) {
             sliderRef.current.slickPrev();
         }
     };
-        const settings: Settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            initialSlide: 0,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                    },
+
+    // Slider settings
+    const settings: Settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
                 },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        initialSlide: 2,
-                        dots: false,
-                    },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    dots: false,
                 },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: false,
-                    },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
                 },
-            ],
-        };
+            },
+        ],
+    };
 
     const renderCities = useCallback((element: number) => {
         switch (element) {
@@ -81,10 +84,10 @@ const TopDestination = () => {
             default:
                 return "";
         }
-    }, [])
+    }, []);
 
     return (
-        <section id='recomendaciones' className="w-full h-auto flex flex-col items-center justify-center relative lg:px-24 md:px-20 px-6 my-20">
+        <section id="recomendaciones" className="w-full h-auto flex flex-col items-center justify-center relative lg:px-24 md:px-20 px-6 my-20">
             <Text as="p" className="font-light text-base text-color3/80 tracking-widest">
                 {TopDestinationTexts.firstText}
             </Text>
@@ -104,7 +107,7 @@ const TopDestination = () => {
 
             {/* Slides  */}
             <div className="w-full h-auto mt-4">
-            <Slider ref={sliderRef} {...settings}>
+                <Slider ref={sliderRef} {...settings}>
                     {
                         TopDestinationTexts.cards.map((card, index) => (
                             <div key={index} className="md:px-6 px-3">
@@ -131,7 +134,7 @@ const TopDestination = () => {
             </div>
 
         </section>
-    )
-}
+    );
+};
 
-export default TopDestination
+export default TopDestination;
