@@ -22,7 +22,6 @@ function App() {
 
   return (
     <div className="w-full bg-white text-gray-950 font-poppins">
-      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/carta" element={<Carta />} />

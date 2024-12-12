@@ -33,10 +33,10 @@ const NavBar = () => {
 
 
     return (
-        <header className="w-full h-auto bg-transparent overflow-y-hidden overflow-x-hidden fixed z-50 top-0 left-0">
+        <header className="w-full h-auto bg-transparent overflow-y-hidden overflow-x-hidden top-0 left-0">
             <Slide direction="down">
                 <nav className={`w-full md:h-24 h-20 ${navBarColor ? "bg-white" : "bg-transparent"} lg:px-24 md:px-12 px-8 flex justify-between items-center`}>
-                    <Image as="a" href="/" style={{ height: '100px', width: '100px'}} className="" image={Logo} alt="Logo" />
+                    <Image as="a" href="/" style={{ height: '90px', width: '90px'}} className="" image={Logo} alt="Logo" />
                     <div className="lg:flex hidden items-center gap-20">
                         <ul className="flex items-center justify-center gap-8">
                             {
@@ -49,15 +49,7 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    <div className="lg:hidden flex gap-4 items-center">
-                        <select className="border-none outline-none font-light text-sm bg-transparent">
-                            <option value="ES">ES</option>
-                            <option value="EN" selected>EN</option>
-                        </select>
-                        <div className="hamburger text-gray-950 cursor-pointer" onClick={handleToggle}>
-                            <CirclesFour size={30} color="currentColor" weight="fill" />
-                        </div>
-                    </div>
+                   
                 </nav>
             </Slide>
 

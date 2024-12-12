@@ -3,17 +3,96 @@ export const NavLinks = [
         name: "Carta",
         url: "/carta"
     },
-    {
-        name: "Recomendaciones",
-        url: "/#recomendaciones"
-    },
-    {
-        name: "Reseñas",
-        url: "https://www.google.com/maps/place/A'+fonte/@43.1111889,-9.0325238,17z/data=!4m8!3m7!1s0xd2ec8147226ce67:0xe4fa655c15fe7c74!8m2!3d43.111185!4d-9.0299489!9m1!1b1!16s%2Fg%2F12qhd8f5p?hl=es&entry=ttu"
-    },
+
 
 ];
 
+export const desayunosText = {
+    firstText: "Todos los desayunos incluyen café y zumo de naranja.",
+    secondText: "Disponemos de pan sin gluten",
+    text: 'Desayunos',
+    text2: 'Larpeiradas',
+    text3: 'Tostas',
+    cards: [
+        {
+            title: 'Riquiño',
+            description: 'Croissant con fruta y chocolate',
+            price: '6,50€'
+        },
+        {
+            title: 'Larpeiro',
+            description: 'Tortitas con chocolate/miel/fruta/crema de cacahuete',
+            info: '(4 tortitas) acompañamento extra 0,50€',
+            price: '5,50€'
+        },
+        {
+            title: 'Xeitosiño',
+            description: 'Yogur griego con topping a eligir: frutas, nueces, muesli de chocolate / muesli de frutos secos',
+            price: '6,00€'
+        },
+        {
+            title: 'A Fonte',
+            description: 'Beagle con salmón, aguacate y queso crema / Beagele con jamón, rúcula y queso de cabra',
+            price: '7,00€'
+        },
+        {
+            title: 'Enxebre',
+            description: 'Nueces, miel y queso crema',
+            price: '5,00€'
+        },
+        {
+            title: 'Aloumiño',
+            description: 'Pantumaca, jamón y huevo revuelto.',
+            price: '6,50€'
+        },
+        {
+            title: 'Irmandiño',
+            description: 'Aguacate, cherrys, huevo y chía / Aguacate, tomate triturado y jamón.',
+            price: '6,50€'
+        },
+        {
+            title: 'Feitzo',
+            description: 'Tosta mantequilla y mermelada',
+            price: '4,70€'
+        }
+    ],
+    cards2: [
+        {
+            description: 'Croissant con fruta y chocolate                        ',
+            price: '3,50€'
+        },
+
+        {
+            description: 'Yogurt girego con topping a eligir: frutas, nueces, muesli de chocolate / muesli de frutos secos',
+            price: '3,00€'
+        }, 
+
+        {
+            description: 'Beagle con salmón, aguacate y queso crema / Beagle con jamón, rúcula y queso de cabra.',
+            price: '3,70€'
+        }
+    ],
+    cards3: [
+        {
+            description: 'Pantumaca, jamón y huevo revuelto',
+            price: '3,70€'
+        },
+
+        {
+            description: 'Nueces, miel y queso crema',
+            price: '2,00€'
+        }, 
+        {
+            description: 'Aguacate, cherrys, huevo y chía / Aguacate, tomate triturado y jamón',
+            price: '3,30€'
+        },
+
+        {
+            description: 'Mantequilla y mermelada',
+            price: '1,80€'
+        }
+    ]
+}
 
 export const HeroTexts = {
     firstText: "Cada sorbo cuenta una historia. Vive la tuya con nosotros.",
@@ -104,6 +183,7 @@ export const MapsText = {
     firstText: "Localizción",
     secondText: "¿Donde estamos?.",  
 }
+
 export const TestimonialTexts = {
     firstText: "Testimonios",
     secondText: "Que opinan nuestros clientes.",

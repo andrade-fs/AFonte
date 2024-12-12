@@ -1,5 +1,6 @@
 import { Image } from "../atoms/Image"
 import bgImage from "../../assets/HeroVector.png"
+import Logo from "../../assets/afonte_logo.png"
 import heroImage from "../../assets/coffe_character.png"
 import { Text } from "../atoms/Text"
 import { HeroTexts } from "../particles/DataLists"
@@ -14,6 +15,7 @@ const HeroSection = () => {
             <Image className="h-[60%] w-[80%] lg:h-[90vh] md:h-[50vh] lg:w-1/2 md:w-[55%]" image={bgImage} alt="Hero Background Vector" />
             <main className="w-full lg:h-full h-auto grid md:grid-cols-2 absolute top-0 left-0 lg:px-24 md:px-8 px-5 pt-24 md:pt-32 lg:pt-0">
                 <div className="flex flex-col justify-center md:gap-6 gap-3 md:order-1 order-2">
+                    <Image as="a" href="/" style={{ height: '90px', width: '90px'}} className="" image={Logo} alt="Logo" />
                     <Text as="p" className="text-color1 uppercase tracking-widest lg:text-base  text-sm font-normal">
                         <Fade>{HeroTexts.firstText}</Fade>
                     </Text>
@@ -24,7 +26,7 @@ const HeroSection = () => {
                         <Fade>{HeroTexts.thirdText}</Fade>
                     </Text>
                     <div className="w-full flex md:justify-start justify-between items-center lg:gap-12 md:gap-6 gap-0">
-                        <Button type="button" className="outline-none border-none lg:px-7 px-5 py-3 bg-color2 text-white font-bold rounded-lg">
+                        <Button onClick={() => window.location.href = '/carta'} type="button" className="outline-none border-none lg:px-7 px-5 py-3 bg-color2 text-white font-bold rounded-lg">
                             {HeroTexts.firstButton}
                         </Button>
 
