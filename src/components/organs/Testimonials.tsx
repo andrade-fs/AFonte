@@ -63,6 +63,8 @@ const Testimonials = () => {
                     <Text as="h1" className="lg:text-5xl md:text-3xl text-4xl text-color3 font-medium">
                         {TestimonialTexts.secondText}
                     </Text>
+                    <div dangerouslySetInnerHTML={{__html: TestimonialTexts.info.replace('google maps', '<a style="color: #6eb4ff" href="https://www.google.es/maps/place/A+Fonte/@43.111226,-9.0299619,17z/data=!4m8!3m7!1s0xd2ec9000094b525:0x2f60864462546c2a!8m2!3d43.111226!4d-9.0299619!9m1!1b1!16s%2Fg%2F11vz0r5_rc?hl=es&entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D">Google Maps</a>')}}></div>
+
                 </div>
                 {/* Testimonial Slides Container  */}
                 <div className="w-full lg:h-[400px] flex justify-center gap-4 items-center">
@@ -71,16 +73,16 @@ const Testimonials = () => {
                             {
                                 TestimonialTexts.feedBacks.map((feedBack, index) => (
                                     <div className="w-full">
-                                        <Card key={index} cardClass="bg-white shadow border-[1px] border-color3/10 relative rounded-xl p-4 lg:h-[200px] h-[260px] lg:mb-4 w-full flex gap-4 justify-start" imageAlt={feedBack.person} imageSrc={renderProfileImg(index)} imageWrapperClass="w-20 h-20 rounded-full absolute lg:bottom-4 bottom-3 right-4 overflow-hidden" cover="object-cover object-top" textWrapperClass="flex flex-col justify-center gap-6">
+                                        <Card
+                                         key={index}
+                                         cardClass="bg-white shadow border-[1px] border-color3/10 relative rounded-xl p-4 lg:h-[200px] h-[260px] lg:mb-4 w-full flex gap-4 justify-start"
+                                         textWrapperClass="flex flex-col justify-center gap-6">
                                             <Text as="q" className="text-[0.84rem] font-light text-color3">
                                                 {feedBack.text}
                                             </Text>
                                             <div className="flex flex-col gap-2">
                                                 <Text as="h4" className="text-base text-color3 font-medium">
                                                     {feedBack.person}
-                                                </Text>
-                                                <Text as="p" className="text-sm text-color3 font-light">
-                                                    {feedBack.location}
                                                 </Text>
                                             </div>
                                         </Card>

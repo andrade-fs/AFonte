@@ -28,20 +28,16 @@ export const ServiceTexts = {
     secondText: "Ofrecemos nuestros mejores servicios",
     cards: [
         {
-            firstText: "Desayunos Ligeros",
-            secondText: "Come sano y ligero para un inicio de día perfecto."
+            firstText: "Desayunos",
+            secondText: "Desayunos completos con todo el sabor casero "
         },
         {
-            firstText: "Platos Fuertes",
-            secondText: "Desayunos completos con todo el sabor casero"
-        },
-        {
-            firstText: "Para Llevar",
+            firstText: "Larpeiradas",
             secondText: "Rápido, conveniente, delicioso. Ideal para tu ritmo de vida."
         },
         {
-            firstText: "Panadería Saludable",
-            secondText: "Opciones horneadas, frescas y nutritivas"
+            firstText: "Tostas",
+            secondText: "Come sano y ligero para un inicio de día perfecto."
         }
     ]
 }
@@ -104,30 +100,30 @@ export const BookingStepsTexts = {
     }
 
 }
-
+export const MapsText = {
+    firstText: "Localizción",
+    secondText: "¿Donde estamos?.",  
+}
 export const TestimonialTexts = {
     firstText: "Testimonios",
     secondText: "Que opinan nuestros clientes.",
+    info: "¡Encuentra más en google maps!",
     feedBacks: [
         {
-            text: "You did a fabulous job. There were no hitches. Thank you again for all your work planning this trip.",
-            person: "Mike taylor",
-            location: "Lahore, Pakistan"
+            text: "Buen sitio para desayunar en la zona de vimianzo, gente muy agradable y local muy chulo. Gran variedad de tostas y puedes diseñar tu propia tosta. 100% recomendable. Por cada 10 desayunos, 1 gratis.",
+            person: "ADRI WEB",
         },
         {
-            text: "Jadoo was great with the entire process from planning to updates during the trip. We had 11 people and everything was perfectly executed. We appreciate all of her hard work. It was truly the trip of a lifetime. Thank you!",
-            person: "Gina",
-            location: "Owerri, Nigeria"
+            text: "Un local de lo mas agradable. Las tostas riquisimas, y generosas. Probe la de jamon con tomate y huevo y la de queso crema con miel y nueces. Las dos buenisimas, pero esta ultima, espectacular. Pero sin duda lo mejor es la atencion. Gente super amable. Solo abren por la mañana, así que hay que aprovechar a parar antes de las 14h. A las 13,30 cierran la cocina.",            
+            person: "Victor Fernandez",
         },
         {
-            text: "Booking through you was very easy and made our lives so much easier. I have nothing bad to say! Thank you for giving us tips and guidance before we left on what to bring and such, that was very helpful!",
-            person: "Emma",
-            location: "Vancouver, Canada"
+            text: "Estaba todo espectacular, desayunamos en la terraza, pero dentro tambien se estaba a gusto. Mucho ambiente. El personal muy amable, siempre con muy buen trato y con una sonrisa. Hacía falta algo así en la zona! Mucha suerte a los dueños, que seguro que no les hace falta porque se ven muy currantes!",
+            person: "Mar C",
         },
         {
-            text: "Thank you for your recommendation and putting the trip together. The resort was absolutely beautiful. The infinity pools, the palm trees in the main pool, the infinity pool in out preferred area overlooking the gulf and the golf course were exceptional....",
-            person: "Loveth",
-            location: "Lagos, Nigeria"
+            text: "Buscando un sitio para desayunar por la zona nos encontramos con este bonito local en una ubicación chulísima. Nos atendieron con una gran amabilidad todo y llegar a punto de que cerrasen cocina. Tostas riquísimas, zumo natural y muy buen café. Grata sorpresa, nos vemos pronto chicos. Gracias por la atención.",
+            person: "Razor",
         },
     ],
 }

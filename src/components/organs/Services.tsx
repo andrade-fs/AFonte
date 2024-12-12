@@ -40,7 +40,7 @@ const Services = () => {
                     <Fade>{ServiceTexts.secondText}</Fade>
                 </Text>
 
-                <div className="w-full h-auto grid lg:grid-cols-4 md:grid-cols-2 lg:gap-7 md:gap-10 gap-7 my-12 z-20 px-8 md:px-0">
+                <div className="w-full h-auto grid lg:grid-cols-3 md:grid-cols-2 lg:gap-7 md:gap-10 gap-7 my-12 z-20 px-8 md:px-0">
                     {
                         ServiceTexts.cards.map((card, index) => (
 

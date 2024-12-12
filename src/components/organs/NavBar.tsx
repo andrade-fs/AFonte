@@ -48,15 +48,6 @@ const NavBar = () => {
                             }
 
                         </ul>
-                        <ul className="flex items-center justify-center gap-6">
-            
-                            <List className="text-gray-950">
-                                <select className="border-none font-light text-base outline-none bg-transparent">
-                                    <option value="ES" selected>ES</option>
-                                    <option value="EN">EN</option>
-                                </select>
-                            </List>
-                        </ul>
                     </div>
                     <div className="lg:hidden flex gap-4 items-center">
                         <select className="border-none outline-none font-light text-sm bg-transparent">

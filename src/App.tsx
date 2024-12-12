@@ -7,6 +7,8 @@ import { animateScroll } from "react-scroll";
 
 import NavBar from "./components/organs/NavBar"
 import Home from "./components/pages/Home";
+import Carta from "./components/pages/Carta";
+
 import { useEffect } from "react";
 import Footer from "./components/organs/Footer";
 
@@ -23,6 +25,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/carta" element={<Carta />} />
       </Routes>
       <Footer />
     </div>
