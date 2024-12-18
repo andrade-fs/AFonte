@@ -3,7 +3,6 @@ import { Image } from "../atoms/Image"
 import bgImage from "../../assets/HeroVector.png"
 import { Text } from "../atoms/Text"
 import { desayunosText } from "../particles/DataLists"
-import { Button } from "../atoms/Button"
 import { Fade } from "react-awesome-reveal"
 import { Card } from "../molecules/Card"
 import Icon1 from "../../assets/Riquiño.jpeg"
@@ -13,6 +12,7 @@ import Icon4 from "../../assets/AFonte.jpeg"
 import Icon5 from "../../assets/Enxebre.jpeg"
 import Icon6 from "../../assets/Aloumiño.jpeg"
 import Icon7 from "../../assets/Irmandiño.jpeg"
+import DownloadButton from "../atoms/DownloadButton"
 
 
 const Carta = () => {
@@ -130,9 +130,7 @@ const Carta = () => {
                 </div>
 
     
-                <Button type="button" className="outline-none border-none lg:px-7 px-5 py-3 bg-color2 text-white font-bold rounded-lg mt-10 mb-20">
-                    Descargar Carta
-                </Button>
+                <DownloadButton/>
             </div>
         </main>
     </section>
