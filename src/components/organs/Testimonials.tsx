@@ -1,7 +1,7 @@
 import { useCallback, useRef } from "react";
 import { Text } from "../atoms/Text"
 import { TestimonialTexts } from "../particles/DataLists"
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";  // Asegúrate de importar 'Slider' correctamente
 import { Button } from "../atoms/Button";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import { Card } from "../molecules/Card";
@@ -11,31 +11,32 @@ import ProfileImg3 from "../../assets/profile3.jpeg"
 import ProfileImg4 from "../../assets/profile4.jpeg"
 
 const Testimonials = () => {
-    const sliderRef = useRef<Slider | null>(null);
+    
+    const sliderRef = useRef<Slider | null>(null);  // Tipamos como 'Slider' que es el tipo correcto
 
-    // Function for next button
     const next = () => {
         if (sliderRef.current) {
             sliderRef.current.slickNext();
         }
     };
-    // function for previous button
+
     const previous = () => {
         if (sliderRef.current) {
             sliderRef.current.slickPrev();
         }
     };
 
-    // Slider settings
-    const settings = {
+
+    const settings: Settings = {
         dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
-
     };
+
+ 
 
     const renderProfileImg = useCallback((element: number) => {
         switch (element) {
