@@ -11,7 +11,7 @@ import ProfileImg3 from "../../assets/profile3.jpeg"
 import ProfileImg4 from "../../assets/profile4.jpeg"
 
 const Testimonials = () => {
-    const sliderRef = useRef<Slider | null>();
+    const sliderRef = useRef<Slider | null>(null);
 
     // Function for next button
     const next = () => {
@@ -69,7 +69,7 @@ const Testimonials = () => {
                 {/* Testimonial Slides Container  */}
                 <div className="w-full lg:h-[400px] flex justify-center gap-4 items-center">
                     <div className="lg:h-[250px] w-[90%]">
-                        <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+                        <Slider ref={sliderRef} {...settings}>
                             {
                                 TestimonialTexts.feedBacks.map((feedBack, index) => (
                                     <div className="w-full">
